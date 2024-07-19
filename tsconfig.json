@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "importHelpers": true,
+    "target": "ES2016",
+    "baseUrl": "./",
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "isolatedModules": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "esnext"
+    ],
+  },
+  "include": [
+    "./src/**/*",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    // required by rspack
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
