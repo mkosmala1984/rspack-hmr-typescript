@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import "./App.css";
 import {Color, Option} from "./Types";
 
@@ -15,15 +15,15 @@ const options: Option[] = [
         label: 'blue',
         value: 'BLUE',
     },
-	{
-		label: 'black',
-		value: 'BLACK',
-	},
+    {
+        label: 'black',
+        value: 'BLACK',
+    },
 ];
 
 function App() {
     const [count, setCount] = useState(0);
-	const [color, setColor] = useState<Color>('RED');
+    const [color, setColor] = useState<Color>('RED');
 
     return (
         <div className="App">
